@@ -2,8 +2,80 @@
   color: tomato;
 }
 
-p{
-    color: slateblue;
+p.texto {
+  color: slateblue;
 }
+
+p.especial {
+  color: mediumseagreen;
+}
+
+div p {
+  color: aquamarine;
+}
+
+div h2,
+div h3 {
+  color: brown;
+}
+
+* {
+  font-size: 36px;
+  color:black;
+}
+
+/*Esto es un comentario 
+de varias lineas*/
+
+.color{
+  /* hexagesimales*/
+  /*color: #ff0; rojo / verde / azul*/
+  /*color: #000000; rojo / verde / azul*/
+   /*RGB*/
+   color: rgb(255,110,250);
+
+}
+
+/*Bordes*/
+.color{
+  /* border:5px black dotted; */
+  /*Tipos de border: dotted, solid, dashed, double, groove etc..*/
+  border-style: solid;
+  border-color: blue;
+  border-radius: 5px; /*redondeo*/
+  border-width: 2rem; /*2 em dos veces el tamano de la fuente
+  del elemento raiz*/
+
+
+}
+
+/* fondo del elemento */
+#fondo{
+
+  /* background-color: red; */
+  background-color: rgba(255,0,0,0.3); /*permite pasar una opacidad*/
+  opacity:0.3;
+  background-image: url('descripcion.png') ;
+  height:400px;
+  /* height: 400px; da tamanio a la imagen */
+  background-size: contain;
+  /* auto: detecta el tamanio automaticamente
+  -cover :utiliza todo el ancho disponible, la imagen se adapta 
+  al espacio dado si la ventan se cierra o se abre mas
+  -contain : contiene la imagen dentro de las dimensiones
+  dadas por height
+  tambien se le puede dar como valores pixeles 
+   background-size: 400 px 400 px */
+   background-repeat: no-repeat;
+   /* background-repeat: repeat-x; se repite horizontal */
+   /* background-repeat: repeat; se repite vertical */
+   background-position: center bottom;
+   /* top /center/ botton o el valor en px, para decir donde se posiciona, eje vertical y eje horizontal */
+  /*atajo para hacer todo lo anterior en una linea*/
+  background: #f00 url('descripcion.png') repeat-y center bottom ;
+
+}
+
+
 
 
