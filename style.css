@@ -21,23 +21,22 @@ div h3 {
 
 * {
   font-size: 36px;
-  color:black;
+  /* color: black; */
 }
 
 /*Esto es un comentario 
 de varias lineas*/
 
-.color{
+.color {
   /* hexagesimales*/
   /*color: #ff0; rojo / verde / azul*/
   /*color: #000000; rojo / verde / azul*/
-   /*RGB*/
-   color: rgb(255,110,250);
-
+  /*RGB*/
+  color: rgb(255, 110, 250);
 }
 
 /*Bordes*/
-.color{
+.color {
   /* border:5px black dotted; */
   /*Tipos de border: dotted, solid, dashed, double, groove etc..*/
   border-style: solid;
@@ -45,18 +44,15 @@ de varias lineas*/
   border-radius: 5px; /*redondeo*/
   border-width: 2rem; /*2 em dos veces el tamano de la fuente
   del elemento raiz*/
-
-
 }
 
 /* fondo del elemento */
-#fondo{
-
+#fondo {
   /* background-color: red; */
-  background-color: rgba(255,0,0,0.3); /*permite pasar una opacidad*/
-  opacity:0.3;
-  background-image: url('descripcion.png') ;
-  height:400px;
+  background-color: rgba(255, 0, 0, 0.3); /*permite pasar una opacidad*/
+  opacity: 0.3;
+  background-image: url("descripcion.png");
+  height: 400px;
   /* height: 400px; da tamanio a la imagen */
   background-size: contain;
   /* auto: detecta el tamanio automaticamente
@@ -66,16 +62,123 @@ de varias lineas*/
   dadas por height
   tambien se le puede dar como valores pixeles 
    background-size: 400 px 400 px */
-   background-repeat: no-repeat;
-   /* background-repeat: repeat-x; se repite horizontal */
-   /* background-repeat: repeat; se repite vertical */
-   background-position: center bottom;
-   /* top /center/ botton o el valor en px, para decir donde se posiciona, eje vertical y eje horizontal */
+  background-repeat: no-repeat;
+  /* background-repeat: repeat-x; se repite horizontal */
+  /* background-repeat: repeat; se repite vertical */
+  background-position: center bottom;
+  /* top /center/ botton o el valor en px, para decir donde se posiciona, eje vertical y eje horizontal */
   /*atajo para hacer todo lo anterior en una linea*/
-  background: #f00 url('descripcion.png') repeat-y center bottom ;
+  background: #f00 url("descripcion.png") repeat-y center bottom;
+}
+
+.margen {
+  background-color: chocolate;
+  margin: 20px 15px 25px 30px;
+  /*espacios afuera arriba / derecha / abajo / izquierda  */
+  /* si solo se pone un valor, se pondra el valor en todo alrededor */
+  padding: 20px 15px 25px 30px;
+  /* espacios dentro arriba / derecha / abajo / izquierda  */
+  border: solid 1px black; 
+  /* esta entre el padding y el margin  */
+  height: 200px;
+  width: 50px;
+  /* si el texto se sale se puede ajustar
+  
+  */
+  overflow: visible;
+  /*muestra el contenido o lo quita *letras*/
+
+  outline: 1px solid red; 
+  /* es un borde que se coloca fuera del borde  */
+
+
 
 }
 
+#superior{
+  margin: 200px;
+}
+
+.text{
+
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  /* tipo de fuente , y pueden ser personalizadas */
+  font-family: 'Roboto',sans-serif;
+  /* 
+  justify, right, left, center
+  para centrar, justificar o izquier derecha el texto  */
+  text-align: center ;
+  text-decoration: underline;
+  /* decorar el texto, underline, overline etc.. */
+  text-shadow: 3px 5px blue;
+}
+
+/* para visualizar links  */
+
+a:link{
+  color:blueviolet;
+}
+
+a:visited{
+  color:gray;
+}
+
+/* resalta cuando se pasa el mouse encima  */
+a:hover{
+  color: yellow;
+}
+
+
+
+a:active{
+  color:red;
+}
+
+
+ul{
+  background-color: cyan;
+  margin: 1px;
+  list-style-type: lower-roman;
+  /* tipo de punto o numero a la par de cada elemento
+  none , disc, circle etc.. */
+  /* padding-left: 0; */
+  /* list-style-position: inside; */
+  /* lugar donde estan los puntos  */
+}
+
+table{
+  width: 100px;
+  border-collapse: collapse;
+  margin: 10px;
+}
+
+th , td{
+  border: solid 1px black;
+  padding: 5px;
+ 
+}
+
+th{
+  background-color: tomato;
+  color: white;
+  text-align: left;
+
+}
+
+tr:nth-child(odd){
+
+  background-color: #eee;
+
+}
+
+/* tr:child toma valores odd impares y even impares  */
+
+
+
+tr:hover{
+  background-color: #aaa;
+  cursor:pointer;
+}
 
 
 
